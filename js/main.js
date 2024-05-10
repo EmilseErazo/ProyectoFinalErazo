@@ -13,8 +13,7 @@ cerrar.addEventListener("click", () => {
 
 const carrito = {
    producto: "Bolsitas",
-    precio: 1100,
-  
+    precio: 1100,  
 }
 
 console.log(carrito?.producto?. brujitacandybar || "No existe ese producto")
