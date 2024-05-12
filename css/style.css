@@ -5,7 +5,7 @@
   
   @font-face {
     font-family: "Cabin-italic";
-    src: url(../Tipografia/Cabin-Italic-VariableFont_wdth\,wght.ttf);
+    src:../Tipografia/Cabin-Italic-VariableFont_wdth\,wght.ttf;
     font-style: normal;
   }
   
@@ -23,12 +23,17 @@
     
  }
 
+ .imagen-principal{
+  max-width: 100%;
+ }
+
 header {
  display: flex;
  align-items: center;
  justify-content: space-between;
  padding: 2rem;
  background-color: #27024a;
+ color: aliceblue;
  }
 
  .logo {
@@ -39,17 +44,20 @@ header {
   list-style-type: none;
   display: flex;
   gap: 1rem;
+  color: aliceblue;
 
  }
  .nav li a {
   text-decoration: none;
-  color:aliceblue;
+  /* color:aliceblue; */
  }
 
  .abrir-menu,
  .cerrar-menu {
   display: none;
  }
+
+ 
 
  /*.abrir-menu, .cerrar-menu {
   background: none;
@@ -102,3 +110,15 @@ header {
 }
 
  }
+
+.footer {
+
+  background-color: #994ce1;
+  color: antiquewhite;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  font-family: "cabin-variable";
+  src: url(../Tipografia/Cabin-VariableFont_wdth\,wght.ttf);
+  font-style: normal;
+}
