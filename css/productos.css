@@ -76,7 +76,8 @@ header {
     gap: 1rem;
     justify-content: flex-end;
     background-color: #e4cefa;
-   
+    cursor: pointer;
+
 
 }
 
@@ -84,7 +85,6 @@ header {
     background-color: #e4cefa;
     text-align: center;
     font-size: 100%;
-    
 
 }
 
@@ -94,7 +94,8 @@ header {
     gap: 1rem;
     padding: 2rem;
     background-color: #e4cefa;
-   
+
+
 
 
 
@@ -106,7 +107,23 @@ header {
 
 .producto-imagen {
     max-width: 40%;
+    border-radius: .85rem;
 }
+
+.boton-producto {
+   cursor: pointer;
+    font-size: medium;
+}
+
+.boton-menu {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    color: #43136f;
+}
+
+/* 
+.boton-principal.active {} */
 
 
 
@@ -122,13 +139,6 @@ header {
     font-style: normal;
 }
 
-.nav-carrito {
-
-    background-color: #e4cefa;
-   
-
-
-}
 
 
 @media screen and (max-width: 550px) {

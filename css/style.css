@@ -45,6 +45,7 @@ header {
   display: flex;
   gap: 1rem;
   color: aliceblue;
+  cursor: pointer;
 
  }
  .nav li a {
