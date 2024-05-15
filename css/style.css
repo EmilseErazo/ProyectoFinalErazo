@@ -45,7 +45,7 @@ header {
   display: flex;
   gap: 1rem;
   color: aliceblue;
-  cursor: pointer;
+  /* cursor: pointer; */
 
  }
  .nav li a {
@@ -56,6 +56,10 @@ header {
  .abrir-menu,
  .cerrar-menu {
   display: none;
+ }
+
+ .numerito {
+  background-color: #994ce1;
  }
 
  
