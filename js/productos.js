@@ -166,16 +166,14 @@ const productosCandy = [
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
-let botonesAgregar = document.querySelectorAll(".produto-agregar");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
 
 
 
- function cargarProductos() {
+ function cargarProductos1(productosParaCargar = [...productos, ...productosParty, ...productosSublimacion, ...productosCandy]) {
 
-    productos.forEach(producto => {
-      
-
+    productosParaCargar.forEach(producto => {
          const div = document.createElement("div");
          div.classList.add("producto");
          div.innerHTML = `
@@ -266,7 +264,7 @@ botonesCategorias.forEach(boton => {
               cargarProductos1(productosFiltrados);
           }
 
-     })
+     });
     
  });
 
@@ -279,23 +277,23 @@ function actualizarBotonesAgregar() {
 
 }
 
- const productosEnCarrito = [];
+ const productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
 
  function agregarAlCarrito(e) {
 
     const idBoton = e.currentTarget.id;
-    const productoAgregado = productos.find(producto => producto.id === idBoton);
+    const productoAgregado = [...productos, ...productosParty, ...productosSublimacion, ...productosCandy].find(producto => producto.id === idBoton);
 
-   const productoEnCarrito = productosEnCarrito.find(producto => producto.id === idBoton);
-    if(productosEnCarrito.some(producto => producto.id === idBoton)) {
-
-     const index =  productosEnCarrito.findIndex(producto => producto.id === idBoton);
-     productosEnCarrito[index].cantidad++;
-
-    } else { 
+//    const productoEnCarrito = productosEnCarrito.find(producto => producto.id === idBoton);
+if (productoAgregado) {
+    const productoEnCarrito = productosEnCarrito.find(producto => producto.id === idBoton);
+    if (productoEnCarrito) {
+        productoEnCarrito.cantidad++;
+    } else {
         productoAgregado.cantidad = 1;
         productosEnCarrito.push(productoAgregado);
     }
+}
 
 
     actualizarNumerito();
