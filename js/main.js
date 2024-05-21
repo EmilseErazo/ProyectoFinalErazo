@@ -17,3 +17,6 @@ const carrito = {
 }
 
 console.log(carrito?.producto?. brujitacandybar || "No existe ese producto")
+
+
+

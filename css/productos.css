@@ -87,9 +87,14 @@ header {
 }
 
 .contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #e4cefa;
     text-align: center;
     font-size: 100%;
+    gap: 2rem;
+   
 
 }
 
