@@ -13,7 +13,8 @@ const productosParty = [
             nombre: "Party Box",
             id: "party box"
         },
-        Precio: 990
+        Precio: 990,
+        Subtotal: 0
     },
 
     {
@@ -24,7 +25,8 @@ const productosParty = [
             nombre: "Party Box",
             id: "party box"
         },
-        Precio: 990
+        Precio: 990,
+        Subtotal: 0
     },
 
     {
@@ -35,7 +37,8 @@ const productosParty = [
             nombre: "Party Box",
             id: "party box"
         },
-        Precio: 990
+        Precio: 990,
+        Subtotal: 0
     }
 
 ];
@@ -52,7 +55,8 @@ const productos = [
             nombre: "Decoracion",
             id: "decoracion"
         },
-        Precio: 76700
+        Precio: 76700,
+        Subtotal: 0
     },
 
     {
@@ -63,7 +67,8 @@ const productos = [
             nombre: "Decoracion",
             id: "decoracion"
         },
-        Precio: 112500
+        Precio: 112500,
+        Subtotal: 0
     },
 
     {
@@ -74,7 +79,8 @@ const productos = [
             nombre: "Decoracion",
             id: "decoracion"
         },
-        Precio: 163370
+        Precio: 163370,
+        Subtotal: 0
     },
     {
         id: "deco4",
@@ -84,7 +90,8 @@ const productos = [
             nombre: "Decoracion",
             id: "decoracion"
         },
-        Precio: 22300
+        Precio: 22300,
+        Subtotal: 0
     }
 
 ];
@@ -101,7 +108,8 @@ const productosSublimacion = [
             nombre: "Sublimacion",
             id: "sublimacion"
         },
-        Precio: 27000
+        Precio: 27000,
+        Subtotal: 0
     },
     {
         id: "sublimacion2",
@@ -111,7 +119,8 @@ const productosSublimacion = [
             nombre: "Sublimacion",
             id: "sublimacion"
         },
-        Precio: 8800
+        Precio: 8800,
+        Subtotal: 0
     }
 
 
@@ -127,7 +136,9 @@ const productosCandy = [
             nombre: "Candy Bar",
             id: "candy"
         },
-        Precio: 175000
+        Precio: 175000,
+        Subtotal: 0
+
     },
     {
         id: "candy2",
@@ -137,7 +148,8 @@ const productosCandy = [
             nombre: "Candy Bar",
             id: "candy"
         },
-        Precio: 211990
+        Precio: 211990,
+        Subtotal: 0
     },
     {
         id: "candy3",
@@ -147,7 +159,8 @@ const productosCandy = [
             nombre: "Candy Bar",
             id: "candy"
         },
-        Precio: 289500
+        Precio: 289500,
+        Subtotal: 0
     },
     {
         id: "candy4",
@@ -157,7 +170,8 @@ const productosCandy = [
             nombre: "Candy Bar",
             id: "candy"
         },
-        Precio: 160000
+        Precio: 160000,
+        Subtotal: 0
     }
 ];
 

@@ -8,7 +8,7 @@ const contenedorCarritoComprado = document.querySelector("#carrito-comprado");
 const totalElement = document.querySelector("#total");
 
 function cargarProductosCarrito() {
-    // Verificar si el carrito está vacío
+    // Verifica si el carrito está vacío
     if (productosEnCarrito.length === 0) {
         contenedorCarritoVacio.classList.remove("disabled");
         contenedorCarritoProductos.classList.add("disabled");
@@ -41,6 +41,10 @@ function cargarProductosCarrito() {
                     <small>Precio</small>
                     <p>$${producto.Precio.toLocaleString()}</p>
                 </div>
+                <div class="producto-subtotal-carrito">
+                <small>Subtotal</small>
+                <p>$${producto.Precio * producto.cantidad}</p>
+            </div>
                 <button class="boton-eliminar-carrito" data-id="${producto.id}"><i class="bi bi-trash"></i></button>
             `;
             contenedorCarritoProductos.appendChild(div);
