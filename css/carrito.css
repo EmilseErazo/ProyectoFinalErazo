@@ -217,10 +217,19 @@ header {
  }
 
 
-/* 
+
 @media screen and (max-width: 550px){
     .contenedor-productos-carrito{
+        display: block;
+       
+    }
+
+    .contenedor-carrito{
+        display: flex ;
+        flex-direction: column;
+    }
+    .producto-carrito{
         display: flex;
         flex-direction: column;
     }
-} */
+} 

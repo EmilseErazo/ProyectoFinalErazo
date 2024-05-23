@@ -66,8 +66,14 @@ function agregarEventListeners() {
         boton.addEventListener("click", eliminarProductoCarrito);
     });
 
+    // const botonBorrarCompra = document.querySelector(".carrito-acciones-borrar");
+    // botonBorrarCompra.addEventListener("click", borrarCompra);
     const botonBorrarCompra = document.querySelector(".carrito-acciones-borrar");
-    botonBorrarCompra.addEventListener("click", borrarCompra);
+    botonBorrarCompra.addEventListener("click", (e) => {
+        e.preventDefault(); 
+        borrarCompra();
+    });
+  
 
     const botonRealizarCompra = document.querySelector(".carrito-acciones-comprar");
     botonRealizarCompra.addEventListener("click", realizarCompra);
@@ -81,10 +87,32 @@ function eliminarProductoCarrito(e) {
     cargarProductosCarrito();
 }
 
+// function borrarCompra() {
+//     productosEnCarrito.length = 0;
+//     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+//     cargarProductosCarrito();
+// }
 function borrarCompra() {
-    productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-    cargarProductosCarrito();
+    Swal.fire({
+        title: '¿Estás seguro?',
+        text: "¡No podrás revertir esto!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#27024a',
+        cancelButtonColor: '#e4cefa',
+        confirmButtonText: 'Sí, borrar todo'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            productosEnCarrito.length = 0;
+            localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+            cargarProductosCarrito();
+            Swal.fire(
+                '¡Borrado!',
+                'Tu carrito ha sido vaciado.',
+                'success'
+            );
+        }
+    });
 }
 
 function realizarCompra() {
