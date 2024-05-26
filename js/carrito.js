@@ -66,18 +66,28 @@ function agregarEventListeners() {
         boton.addEventListener("click", eliminarProductoCarrito);
     });
 
-    // const botonBorrarCompra = document.querySelector(".carrito-acciones-borrar");
+     //const botonBorrarCompra = document.querySelector(".carrito-acciones-borrar");
     // botonBorrarCompra.addEventListener("click", borrarCompra);
     const botonBorrarCompra = document.querySelector(".carrito-acciones-borrar");
     botonBorrarCompra.addEventListener("click", (e) => {
-        e.preventDefault(); 
+        e.preventDefault();
         borrarCompra();
+
     });
-  
 
     const botonRealizarCompra = document.querySelector(".carrito-acciones-comprar");
-    botonRealizarCompra.addEventListener("click", realizarCompra);
+
+    botonRealizarCompra.addEventListener("click", (e) => {
+        e.preventDefault();
+        realizarCompra();
+
+    });
+
+
 }
+
+     //botonRealizarCompra.addEventListener("click", realizarCompra);
+
 
 function eliminarProductoCarrito(e) {
     const idProducto = e.currentTarget.dataset.id;
@@ -115,13 +125,45 @@ function borrarCompra() {
     });
 }
 
+
 function realizarCompra() {
-    productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-    contenedorCarritoProductos.classList.add("disabled");
-    contenedorCarritoAcciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.remove("disabled");
+    Swal.fire({
+        title: 'Atencion estas por tu compra',
+        text: "Desea realizar la compra?",
+        icon: 'success',
+        showCancelButton:true,        
+        confirmButtonColor: '#27024a',
+        cancelButtonColor: '#e4cefa', 
+        confirmButtonText: 'Sí, Comprar todo'
+
+    
+      
+    }).then((result) => {
+        if (result.isConfirmed) {
+        productosEnCarrito.length = 0;
+        localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+        contenedorCarritoProductos.classList.add("disabled");
+        contenedorCarritoAcciones.classList.add("disabled");
+        contenedorCarritoComprado.classList.remove("disabled");
+        
+        Swal.fire(
+            '¡Compra realizada!',
+            'Tu carrito ha sido comprado.',
+            'success'
+        );
+        }
+    });
 }
+
+
+
+       function realizarCompra0() {
+     productosEnCarrito.length = 0;
+     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+     contenedorCarritoProductos.classList.add("disabled");
+     contenedorCarritoAcciones.classList.add("disabled");
+     contenedorCarritoComprado.classList.remove("disabled");
+ }
 
 // Inicializa la carga de productos del carrito
 cargarProductosCarrito();

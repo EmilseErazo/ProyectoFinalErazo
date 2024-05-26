@@ -17,7 +17,7 @@
             </header>
 
             <nav>
-                <ul  class="nav-carrito">
+                <ul class="nav-carrito">
 
                     <li>
                         <a class="boton-volver" href="./productos.html">Seguir comprando. <i
@@ -33,7 +33,8 @@
             <h2 class="titulo-carrito">Mi compra. </h2>
 
             <div class="contenedor-carrito ">
-                <p id="carrito-vacio" class="carrito-vacio"> Mi carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
+                <p id="carrito-vacio" class="carrito-vacio"> Mi carrito está vacío. <i class="bi bi-emoji-frown"></i>
+                </p>
                 <div id="carrito-productos" class="carrito-productos disabled">
                     <div class="producto-carrito">
                         <img class="producto-imagen-carrito" src="./Imagenes/BRUJITA 1.jpg" alt="">
@@ -60,7 +61,7 @@
                             <h3>Brujita 2</h3>
                         </div>
                         <div class="producto-cantidad-carrito">
-                            <small >Cantidad</small>
+                            <small>Cantidad</small>
                             <p>1</p>
                         </div>
                         <div class="producto-precio-carrito">
@@ -97,10 +98,13 @@
                         <p>Total</p>
                         <p id="total">$ 175.000</p>
                     </div>
-                    <button class="carrito-acciones-comprar">Realizar compra.</button>
+                    <div>
+                        <button class="carrito-acciones-comprar">Realizar compra.</button>
+                    </div>
+                    
+                        <p id="carrito-comprado" class="carrito-compra disabled"> Muchas por tu compra. <i
+                                class="bi bi-emoji-smile"></i></i></p>
                 </div>
-
-                <p id="carrito-comprado" class="carrito-compra disabled"> Muchas por tu compra. <i class="bi bi-emoji-smile"></i></i></p>
             </div>
         </main>
 
@@ -108,7 +112,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert script -->
     <script src="./js/carrito.js"></script>
-  
+
 </body>
 
 </html>
