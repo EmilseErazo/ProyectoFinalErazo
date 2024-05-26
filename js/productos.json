@@ -1,0 +1,159 @@
+[
+    {
+        "id": "bolsitas1",
+        "titulo": "Bolsitas",
+        "imagen": "./imagenes/bolsitas.jpg",
+        "categoria": {
+            "nombre": "Party Box",
+            "id": "party box"
+        },
+        "precio": 990,
+        "Subtotal": 0
+    },
+
+    {
+        "id": "party2",
+        "titulo": "Cajita golosinera",
+        "imagen": "./imagenes/cajita golosinera.jpg",
+        "categoria": {
+            "nombre": "Party Box",
+            "id": "party box"
+        },
+        "precio": 990,
+        "Subtotal": 0
+    },
+
+    {
+        "id": "party3",
+        "titulo": "Valijita cristal",
+        "imagen": "./imagenes/valijita cristal.jpg",
+        "categoria": {
+            "nombre": "Party Box",
+            "id": "party box"
+        },
+        "precio": 1500,
+        "Subtotal": 0
+    },
+
+
+
+    {
+        "id": "deco1",
+        "titulo": "Brujita deco 1",
+       "imagen": "./imagenes/Deco 1.jpg",
+        "categoria": {
+            "nombre": "Decoracion",
+            "id": "decoracion"
+        },
+        "precio": 76700,
+        "Subtotal": 0
+    },
+
+    {
+        "id": "deco2",
+        "titulo": "Brujita deco 2",
+        "imagen": "./imagenes/LA granja.jpg",
+        "categoria": {
+            "nombre": "Decoracion",
+            "id": "decoracion"
+        },
+        "precio": 112500,
+        "Subtotal": 0
+    },
+
+    {
+        "id": "deco3",
+        "titulo": "Brujita deco 3",
+        "imagen": "./imagenes/Argentina.jpg",
+        "categoria": {
+            "nombre": "Decoracion",
+            "id": "decoracion"
+        },
+        "precio": 163370,
+        "Subtotal": 0
+    },
+    {
+        "id": "deco4",
+        "titulo": "Plaza Banda",
+        "imagen": "./imagenes/Plaza blanda.jpg",
+        "categoria": {
+            "nombre": "Decoracion",
+            "id": "decoracion"
+        },
+        "precio": 22300,
+        "Subtotal": 0
+    },
+
+
+
+    {
+        "id": "sublimacion1",
+        "titulo": "Mochila",
+        "imagen": "./imagenes/sublimacion/mochila thomas.jpg",
+        "categoria": {
+            "nombre": "Sublimacion",
+            "id": "sublimacion"
+        },
+        "precio": 27000,
+        "Subtotal": 0
+    },
+    {
+        "id": "sublimacion2",
+        "titulo": "set de jardin",
+        "imagen": "./imagenes/sublimacion/20240207_162937.jpg",
+        "categoria": {
+            "nombre": "Sublimacion",
+            "id": "sublimacion"
+        },
+        "precio": 8800,
+        "Subtotal": 0
+    },
+
+
+
+    {
+        "id": "candy1",
+        "titulo": "Brujita 1",
+        "imagen": "./imagenes/BRUJITA 1.jpg",
+        "categoria": {
+            "nombre": "Candy Bar",
+            "id": "candy"
+        },
+        "precio": 175000,
+        "Subtotal": 0
+
+    },
+    {
+        "id": "candy2",
+        "titulo": "Brujita 2",
+        "imagen": "./imagenes/Simones.jpg",
+        "categoria": {
+            "nombre": "Candy Bar",
+            "id": "candy"
+        },
+        "precio": 211990,
+        "Subtotal": 0
+    },
+    {
+        "id": "candy3",
+        "titulo": "Brujita 3",
+        "imagen": "./imagenes/Emma-4.jpg",
+        "categoria": {
+            "nombre": "Candy Bar",
+            "id": "candy"
+        },
+        "precio": 289500,
+        "Subtotal": 0
+    },
+    {
+        "id": "candy4",
+        "titulo": "Brujita Bar",
+       "imagen": "./imagenes/Bar Brujita.jpg",
+        "categoria": {
+            "nombre": "Candy Bar",
+            "id": "candy"
+        },
+        "precio": 160000,
+        "Subtotal": 0
+    }
+]

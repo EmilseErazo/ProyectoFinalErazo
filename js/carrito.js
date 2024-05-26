@@ -39,11 +39,11 @@ function cargarProductosCarrito() {
                 </div>
                 <div class="producto-precio-carrito">
                     <small>Precio</small>
-                    <p>$${producto.Precio.toLocaleString()}</p>
+                    <p>$${producto.precio.toLocaleString()}</p>
                 </div>
                 <div class="producto-subtotal-carrito">
                 <small>Subtotal</small>
-                <p>$${producto.Precio * producto.cantidad}</p>
+                <p>$${producto.precio * producto.cantidad}</p>
             </div>
                 <button class="boton-eliminar-carrito" data-id="${producto.id}"><i class="bi bi-trash"></i></button>
             `;
@@ -56,7 +56,7 @@ function cargarProductosCarrito() {
 }
 
 function actualizarTotal() {
-    const total = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad * producto.Precio, 0);
+    const total = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad * producto.precio, 0);
     totalElement.innerText = `$${total.toLocaleString()}`;
 }
 
